@@ -66,7 +66,7 @@ deloreanized_sd = {
 
 print("Merge complete! Saving to disk . . .")
 LlamaForCausalLM.save_pretrained(
-    base_model, "./merged_model", state_dict=deloreanized_sd, max_shard_size="400MB"
+    base_model, "./merged_model", state_dict=deloreanized_sd, max_shard_size="10GB"
 )
 
 print("Copying tokenizer model from base model . . .")
